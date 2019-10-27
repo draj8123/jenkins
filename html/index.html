@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Cloud Services Ops</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Daily Activities">Daily Activities <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<a href="DailyActivites\Restart_Manhattan_PROD_Endpoints.htm" target="_blank" class="w3-bar-item w3-button">Restart Manhattan PROD Endpoints on daily basis_9:30_AM</a>
+		<a href="DailyActivites\Manhattan_Training_Environment.htm" target="_blank"  class="w3-bar-item w3-button">Manhattan Training Environment Health Check Daily_9:30_AM</a>
+		<a href="DailyActivites\Sync_not_processed_for_LA1-2-007.htm" target="_blank"  class="w3-bar-item w3-button">Sync not processed for LA1-2-007_10:30_AM</a>
+		<a href="DailyActivites\Final_Inventory_SYNC_Batch_validations.htm" target="_blank"  class="w3-bar-item w3-button">Final Inventory SYNC Batch validations_12:30_PM</a>
+		<a href="DailyActivites\MICH_Inventory_Sync_Monitoring.htm" target="_blank"  class="w3-bar-item w3-button">MICH Inventory Sync Monitoring_12:30_PM</a>
+		<a href="DailyActivites\ORLA_PROD_MIF.htm" target="_blank"  class="w3-bar-item w3-button">ORLA_PROD_MIF INVENTORY AVAILABILITY SYNC ITEM COUNT (CRITICAL) Report_1:30_PM</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Mon_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="1Monday\VITA-WM_Application_servers_Recycle_for_VA_DC.htm" target="_blank"  class="w3-bar-item w3-button">VITA-WM Application servers Recycle for VA DC</a>
+        <a href="1Monday\VITA-WM_and_SCI_Application_servers_Recycle_for_AZ_DC.htm" target="_blank"  class="w3-bar-item w3-button">VITA-WM and SCI Application servers Recycle for AZ DC</a>
+        <a href="1Monday\Container_store_SOFM_Production_Recycle_steps.htm" target="_blank"  class="w3-bar-item w3-button">(MSO - I) Container store - SOFM Production Recycle steps/sequence</a>
+        <a href="1Monday\Periodic_restart_of_oSCI_Environments.htm" target="_blank"  class="w3-bar-item w3-button">Periodic restart of oSCI Environments</a>
+        <a href="1Monday\Cert_WM1101_&_758_Restart.htm" target="_blank"  class="w3-bar-item w3-button">{MAI} - Cert WM1101 & 758  Restart</a>
+      </div>
+    </div>
+	
+	    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Tue_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" target="_blank"  class="w3-bar-item w3-button">No Recycles</a>
+      </div>
+    </div>
+
+	    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Wed_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="3Wednesday\PUMA-Weekly_Restart_WH09_and_WH10.htm" target="_blank"  class="w3-bar-item w3-button">PUMA - Weekly Restart WH09 and WH10</a>
+      </div>
+    </div>
+	
+	    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Thu_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<a href="4Thursday\HEB_Production_(DOM_&_WM)_Scheduled_Maintenance.htm" target="_blank"  class="w3-bar-item w3-button">HEB Production ( DOM & WM ) Scheduled Maintenance</a>
+        <a href="4Thursday\VITA_wmspap1_Recycle.htm" target="_blank"  class="w3-bar-item w3-button">{MAI} - VITA wmspap1 Recycle</a>
+      </div>
+    </div>
+
+	    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Fri_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" target="_blank"  class="w3-bar-item w3-button">No Recycles</a>
+      </div>
+    </div>
+
+	    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Sat_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="6Saturday\Weekly_Recycle-COTN_ASIA_PROD.htm" target="_blank"  class="w3-bar-item w3-button">Weekly Recycle - COTN ASIA PROD</a>
+      </div>
+    </div>
+
+	    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Recycles">Sun_Recycles<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-1">
+        <a href="7Sunday\STAPLE_UK_&_NORWAY_PROD_weekly_recycle.htm" target="_blank"  class="w3-bar-item w3-button">STAPLE UK & NORWAY PROD weekly recycle</a>
+        <a href="7Sunday\MKOR_UK_PROD,_TEST_&_DEV_Recycle.htm" target="_blank"  class="w3-bar-item w3-button">MKOR UK PROD, TEST & DEV Recycle</a>
+        <a href="7Sunday\GSTY_Production_Scheduled_Maintenance.htm" target="_blank"  class="w3-bar-item w3-button">GSTY Production Scheduled Maintenance</a>
+        <a href="7Sunday\Periodic_restart_of_oSCI_Environments.htm" target="_blank"  class="w3-bar-item w3-button">Periodic restart of oSCI Environments</a>
+        <a href="7Sunday\COTN_USA_PROD_Weekly_Recycle.htm" target="_blank"  class="w3-bar-item w3-button">COTN USA PROD Weekly Recycle</a>
+        <a href="7Sunday\MKOR_US_Production_Scheduled_Maintenance.htm" target="_blank"  class="w3-bar-item w3-button">MKOR US Production Scheduled Maintenance</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+	<h1 class="w3-wide">CLOUD SERVICES</h1>
+	<h class="w3-wide">OPS TEAM</h>
+   <!-- <p class="w3-opacity"><i>OPS TEAM</i></p> -->
+
+    <p class="w3-justify">Ops Team provides support for around 70+ customers and its related to Warehouse management Applications. Customers are categorized into Managed Services,Hosting Services and Sass.
+	On Day to Day we get fix pack requests like JAVA,CPP & DB SDN. Project Management 
+	Team will be creating Calender Invites for SDN fix pack deployments based on Client requirements. Every Day we need to check our calender invitation and work accordingly. 
+	Apart from this we need to monitor our mails like Interface Failures ,CPU & Disk usage alerts etc. 
+   </p>
+    <p class="w3-justify"> Also we have Daily,weekly and Quarterly Recycles for different Customers and we have Daily Checks . We work on WM, MDA, MIP, MIF, Dashboard and SCI applications. MIP is for single sign on application if MIP is down other applications we can't access. 
+	   Below you can see list of clients which we support and the Sample Steps for applying fix packs. We will be using MMC(Manhattan Management Console) for stopping and starting the applications also fixpacks will be applied via MMC.
+   </p>
+    <p class="w3-justify">Below you can see list of clients which we support and the Sample Steps for applying fix packs.
+   </p>
+   
+   <br>
+    <div class="w3-row w3-padding-32">
+		<a href="general\clients.html" target="_blank"  class="w3-bar-item w3-button">Clients</a>
+		<a href="http://blvd-mso.asia.manh.com:8080/MangaedServices_new/" target="_blank"  class="w3-bar-item w3-button">Clients Information</a>
+		<a href="general\java_sdn.htm" target="_blank"  class="w3-bar-item w3-button">JAVA SDN</a>
+		<a href="general\cpp_sdn.htm" target="_blank"  class="w3-bar-item w3-button">CPP SDN</a>
+		<a href="general\db_sdn.htm" target="_blank"  class="w3-bar-item w3-button">DB SDN</a>
+		<a href="https://manh1.sharepoint.com/:x:/r/sites/maimanagedservices/_layouts/15/Doc.aspx?sourcedoc=%7BD2ECDAE0-2D85-4B0F-9881-9BACF8372C3E%7D&file=MSO_DailyWorkBook_050219.xlsx&action=default&mobileredirect=true" target="_blank"  class="w3-bar-item w3-button">Daily Tracker</a>
+		<a href="new.html" target="_blank"  class="w3-bar-item w3-button"></a>
+		<a href="new.html" target="_blank"  class="w3-bar-item w3-button"></a>
+      
+    </div>
+  </div>
+</body>
+</html>
